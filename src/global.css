@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "uniwind";
+@import "panelui-native/theme.css";
+
+@source "../node_modules/panelui-native/src";
+
+@theme {
+	--font-normal: Outfit_400Regular;
+	--font-medium: Outfit_500Medium;
+	--font-semibold: Outfit_600SemiBold;
+	--font-bold: Outfit_700Bold;
+	--font-extrabold: Outfit_800ExtraBold;
+}

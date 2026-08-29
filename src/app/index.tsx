@@ -1,17 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
+import { Typography } from "panelui-native";
 
 export default function Index() {
 	return (
-		<View style={styles.container}>
-			<Text>Edit src/app/index.tsx to edit this screen.</Text>
+		<View className="flex-1 justify-center bg-background px-2">
+			<Typography.Heading className="text-center">STUMPR</Typography.Heading>
 		</View>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-	},
-});

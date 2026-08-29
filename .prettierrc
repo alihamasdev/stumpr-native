@@ -6,7 +6,7 @@
 	"singleQuote": false,
 	"trailingComma": "all",
 	"jsxSingleQuote": false,
-	"tailwindStylesheet": "./src/styles.css",
+	"tailwindStylesheet": "./src/global.css",
 	"tailwindFunctions": ["cn", "cva"],
 	"importOrder": [
 		"^(react/(.*)$)|^(react$)",
