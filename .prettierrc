@@ -16,6 +16,7 @@
 		"<THIRD_PARTY_MODULES>",
 		"",
 		"^@/lib/(.*)$",
+		"^@/constants/(.*)$",
 		"^@/hooks/(.*)$",
 		"^@/contexts/(.*)$",
 		"^@/components/ui/(.*)$",

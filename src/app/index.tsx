@@ -1,10 +1,5 @@
-import { View } from "react-native";
-import { Typography } from "panelui-native";
+import { Redirect } from "expo-router";
 
-export default function Index() {
-	return (
-		<View className="flex-1 justify-center bg-background px-2">
-			<Typography.Heading className="text-center">STUMPR</Typography.Heading>
-		</View>
-	);
+export default function HomeScreen() {
+	return <Redirect href={"/(tabs)/matches"} />;
 }

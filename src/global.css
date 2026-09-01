@@ -10,4 +10,164 @@
 	--font-semibold: Outfit_600SemiBold;
 	--font-bold: Outfit_700Bold;
 	--font-extrabold: Outfit_800ExtraBold;
+
+	--radius-xs: 4px;
+	--radius-sm: 6px;
+	--radius-md: 10px;
+	--radius-lg: 12px;
+	--radius-xl: 16px;
+	--radius-2xl: 20px;
+	--radius-3xl: 24px;
+}
+
+@layer theme {
+	:root {
+		@variant light {
+			/* ---------- Surfaces ---------- */
+
+			--color-background: #ffffff;
+			--color-foreground: #000000;
+
+			--color-card: #f2f2f7;
+			--color-card-foreground: #000000;
+
+			--color-popover: #ffffff;
+			--color-popover-foreground: #000000;
+
+			--color-overlay: #ffffff;
+			--color-overlay-foreground: #000000;
+
+			--color-inset: rgba(0, 0, 0, 0.035);
+
+			/* ---------- Actions ---------- */
+
+			--color-primary: #007aff;
+			--color-primary-foreground: #ffffff;
+
+			--color-secondary: #f2f2f7;
+			--color-secondary-foreground: #000000;
+
+			--color-muted: #f2f2f7;
+			--color-muted-foreground: #8e8e93;
+
+			--color-accent: #e5f1ff;
+			--color-accent-foreground: #007aff;
+
+			/* ---------- Status ---------- */
+
+			--color-destructive: #ff3b30;
+			--color-destructive-foreground: #d70015;
+
+			--color-info: #007aff;
+			--color-info-foreground: #0066cc;
+
+			--color-success: #34c759;
+			--color-success-foreground: #248a3d;
+
+			--color-warning: #ff9500;
+			--color-warning-foreground: #c93400;
+
+			/* ---------- Lines ---------- */
+
+			--color-border: rgba(60, 60, 67, 0.29);
+			--color-input: rgba(60, 60, 67, 0.29);
+			--color-ring: #007aff;
+
+			/* ---------- Elevation ---------- */
+
+			--color-surface: #f2f2f7;
+			--color-surface-secondary: #e5e5ea;
+			--color-surface-tertiary: #d1d1d6;
+
+			--color-skeleton: rgba(0, 0, 0, 0.08);
+
+			/* ---------- Status fills ---------- */
+
+			--color-info-soft: rgba(0, 122, 255, 0.1);
+			--color-info-subtle: rgba(0, 122, 255, 0.06);
+
+			--color-success-soft: rgba(52, 199, 89, 0.1);
+			--color-success-subtle: rgba(52, 199, 89, 0.06);
+
+			--color-warning-soft: rgba(255, 149, 0, 0.1);
+			--color-warning-subtle: rgba(255, 149, 0, 0.06);
+
+			--color-destructive-soft: rgba(255, 59, 48, 0.1);
+			--color-destructive-subtle: rgba(255, 59, 48, 0.06);
+		}
+
+		@variant dark {
+			/* ---------- Surfaces ---------- */
+
+			--color-background: #000000;
+			--color-foreground: #ffffff;
+
+			--color-card: #1c1c1e;
+			--color-card-foreground: #ffffff;
+
+			--color-popover: #1c1c1e;
+			--color-popover-foreground: #ffffff;
+
+			--color-overlay: #2c2c2e;
+			--color-overlay-foreground: #ffffff;
+
+			--color-inset: rgba(255, 255, 255, 0.035);
+
+			/* ---------- Actions ---------- */
+
+			--color-primary: #0a84ff;
+			--color-primary-foreground: #ffffff;
+
+			--color-secondary: #2c2c2e;
+			--color-secondary-foreground: #ffffff;
+
+			--color-muted: #1c1c1e;
+			--color-muted-foreground: #8e8e93;
+
+			--color-accent: rgba(10, 132, 255, 0.18);
+			--color-accent-foreground: #0a84ff;
+
+			/* ---------- Status ---------- */
+
+			--color-destructive: #ff453a;
+			--color-destructive-foreground: #ff6961;
+
+			--color-info: #0a84ff;
+			--color-info-foreground: #409cff;
+
+			--color-success: #30d158;
+			--color-success-foreground: #32d74b;
+
+			--color-warning: #ff9f0a;
+			--color-warning-foreground: #ffb340;
+
+			/* ---------- Lines ---------- */
+
+			--color-border: rgba(84, 84, 88, 0.65);
+			--color-input: rgba(84, 84, 88, 0.65);
+			--color-ring: #0a84ff;
+
+			/* ---------- Elevation ---------- */
+
+			--color-surface: #1c1c1e;
+			--color-surface-secondary: #2c2c2e;
+			--color-surface-tertiary: #3a3a3c;
+
+			--color-skeleton: rgba(255, 255, 255, 0.08);
+
+			/* ---------- Status fills ---------- */
+
+			--color-info-soft: rgba(10, 132, 255, 0.15);
+			--color-info-subtle: rgba(10, 132, 255, 0.09);
+
+			--color-success-soft: rgba(48, 209, 88, 0.15);
+			--color-success-subtle: rgba(48, 209, 88, 0.09);
+
+			--color-warning-soft: rgba(255, 159, 10, 0.15);
+			--color-warning-subtle: rgba(255, 159, 10, 0.09);
+
+			--color-destructive-soft: rgba(255, 69, 58, 0.15);
+			--color-destructive-subtle: rgba(255, 69, 58, 0.09);
+		}
+	}
 }

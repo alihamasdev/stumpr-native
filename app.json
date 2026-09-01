@@ -5,12 +5,13 @@
 		"scheme": "stumpr",
 		"owner": "stumpr",
 		"version": "1.0.0",
-		"platforms": ["ios"],
+		"platforms": ["ios", "android"],
 		"orientation": "portrait",
 		"userInterfaceStyle": "automatic",
 		"icon": "./assets/images/icon.png",
 		"ios": {
-			"icon": "./assets/expo.icon"
+			"icon": "./assets/expo.icon",
+			"bundleIdentifier": "com.alihamasdev.stumpr"
 		},
 		"android": {
 			"adaptiveIcon": {
@@ -19,10 +20,12 @@
 				"backgroundImage": "./assets/images/android-icon-background.png",
 				"monochromeImage": "./assets/images/android-icon-monochrome.png"
 			},
-			"predictiveBackGestureEnabled": false
+			"predictiveBackGestureEnabled": false,
+			"package": "com.alihamasdev.stumpr"
 		},
 		"plugins": [
 			"expo-router",
+			"expo-font",
 			[
 				"expo-splash-screen",
 				{
