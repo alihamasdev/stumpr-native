@@ -1,35 +1,42 @@
 {
-	"fill": {
-		"automatic-gradient": "extended-srgb:0.00000,0.47843,1.00000,1.00000"
-	},
-	"groups": [
-		{
-			"layers": [
-				{
-					"image-name": "expo-symbol 2.svg",
-					"name": "expo-symbol 2",
-					"position": {
-						"scale": 1,
-						"translation-in-points": [1.1008400065293245e-5, -16.046875]
-					}
-				},
-				{
-					"image-name": "grid.png",
-					"name": "grid"
-				}
-			],
-			"shadow": {
-				"kind": "neutral",
-				"opacity": 0.5
-			},
-			"translucency": {
-				"enabled": true,
-				"value": 0.5
-			}
-		}
-	],
-	"supported-platforms": {
-		"circles": ["watchOS"],
-		"squares": "shared"
-	}
+  "fill" : {
+    "solid" : "srgb:0.74118,0.02353,0.13333,1.00000"
+  },
+  "groups" : [
+    {
+      "blur-material" : null,
+      "hidden" : false,
+      "layers" : [
+        {
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "logo.png",
+          "name" : "logo",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "lighting" : "individual",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
 }
