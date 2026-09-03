@@ -1,10 +1,8 @@
-import { Stack } from "expo-router";
-
-import { globalStackOptions } from "@/constants/navigation";
+import { Stack } from "@/components/layout/stack";
 
 export default function MatchesLayout() {
 	return (
-		<Stack screenOptions={globalStackOptions}>
+		<Stack>
 			<Stack.Screen name="index" options={{ title: "Matches" }} />
 		</Stack>
 	);

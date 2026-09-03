@@ -1,30 +1,32 @@
-import { Item, ReceiptIcon } from "panelui-native";
+import { Avatar, Item } from "panelui-native";
 import Animated from "react-native-reanimated";
 
 export default function TeamsScreen() {
 	return (
-		<>
-			<Animated.ScrollView className="flex flex-1 bg-background" contentContainerClassName="gap-2 px-2 pb-4">
-				<Item variant="muted">
-					<Item.Media variant="icon">
-						<ReceiptIcon size={18} />
-					</Item.Media>
-					<Item.Content>
-						<Item.Title>Invoice.pdf</Item.Title>
-						<Item.Description>2.4 MB · Updated yesterday</Item.Description>
-					</Item.Content>
-				</Item>
+		<Animated.ScrollView className="flex flex-1 bg-background" contentContainerClassName="gap-2 p-2">
+			<Item variant="muted">
+				<Avatar fallback="HA" />
+				<Item.Content className="gap-0">
+					<Item.Title>Hamza XI</Item.Title>
+					<Item.Description>HXI</Item.Description>
+				</Item.Content>
+			</Item>
 
-				<Item variant="muted">
-					<Item.Media variant="icon">
-						<ReceiptIcon size={18} />
-					</Item.Media>
-					<Item.Content>
-						<Item.Title>Invoice.pdf</Item.Title>
-						<Item.Description>2.4 MB · Updated yesterday</Item.Description>
-					</Item.Content>
-				</Item>
-			</Animated.ScrollView>
-		</>
+			<Item variant="muted">
+				<Avatar fallback="AH" />
+				<Item.Content className="gap-0">
+					<Item.Title>Nadeem XI</Item.Title>
+					<Item.Description>NXI</Item.Description>
+				</Item.Content>
+			</Item>
+
+			<Item variant="muted">
+				<Avatar fallback="WA" />
+				<Item.Content className="gap-0">
+					<Item.Title>Married</Item.Title>
+					<Item.Description>MARR</Item.Description>
+				</Item.Content>
+			</Item>
+		</Animated.ScrollView>
 	);
 }

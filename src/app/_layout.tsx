@@ -6,7 +6,19 @@ import { Outfit_400Regular, Outfit_500Medium, Outfit_600SemiBold, Outfit_700Bold
 import { useFonts } from "expo-font";
 import { PanelUIProvider } from "panelui-native";
 
-import { globalStackOptions } from "@/constants/navigation";
+import { globalStackOptions } from "@/components/layout/stack";
+
+export const unstable_settings = {
+	initialRouteName: "(tabs)",
+};
+
+export function SuspenseFallback() {
+	return (
+		<View className="flex-1 items-center justify-center bg-background">
+			<ActivityIndicator size="large" />
+		</View>
+	);
+}
 
 export default function RootLayout() {
 	const colorScheme = useColorScheme();
@@ -25,16 +37,9 @@ export default function RootLayout() {
 			<ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
 				<Stack screenOptions={globalStackOptions}>
 					<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+					<Stack.Screen name="(stats)" options={{ headerShown: false }} />
 				</Stack>
 			</ThemeProvider>
 		</PanelUIProvider>
-	);
-}
-
-export function SuspenseFallback() {
-	return (
-		<View className="flex-1 items-center justify-center bg-background">
-			<ActivityIndicator size="large" />
-		</View>
 	);
 }
