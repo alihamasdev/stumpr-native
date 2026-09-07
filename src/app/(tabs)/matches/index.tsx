@@ -1,5 +1,7 @@
-import { Item, ReceiptIcon } from "panelui-native";
+import { ReceiptIcon } from "lucide-react-native";
 import Animated from "react-native-reanimated";
+
+import { Item } from "@/components/ui/item";
 
 export default function MatchesScreen() {
 	return (

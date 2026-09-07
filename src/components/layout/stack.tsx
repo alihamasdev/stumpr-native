@@ -1,6 +1,6 @@
 import { Platform, Pressable } from "react-native";
 import { Stack as ExpoStack, useRouter, type NativeStackNavigationOptions } from "expo-router";
-import { ChevronLeftIcon } from "panelui-native";
+import { ChevronLeftIcon } from "lucide-react-native";
 
 export const globalStackOptions: NativeStackNavigationOptions = {
 	headerShadowVisible: false,
@@ -28,18 +28,14 @@ export function BackButton() {
 }
 
 export function StackRoot({ screenOptions, ...props }: React.ComponentProps<typeof ExpoStack>) {
-	return (
-		<ExpoStack
-			screenOptions={{
-				...globalStackOptions,
-				headerLeft: ({ canGoBack }) => (canGoBack ? <BackButton /> : null),
-				...screenOptions,
-			}}
-			{...props}
-		/>
-	);
+	return <ExpoStack screenOptions={{ ...globalStackOptions, ...screenOptions }} {...props} />;
 }
 
 export const Stack = Object.assign(StackRoot, {
 	Screen: ExpoStack.Screen,
+	Header: ExpoStack.Header,
+	Title: ExpoStack.Title,
+	SearchBar: ExpoStack.SearchBar,
+	Toolbar: ExpoStack.Toolbar,
+	Protected: ExpoStack.Protected,
 });
